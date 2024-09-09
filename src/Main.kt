@@ -1,3 +1,9 @@
 fun main() {
-    println("Hello World!")
+    getLovelyBook(null)
+    getLovelyBook("Война и мир")
+}
+
+fun getLovelyBook(myBook: String?) {
+    val result: String = myBook ?: "У меня нет любимой книги"
+    println(result)
 }
